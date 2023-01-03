@@ -70,3 +70,7 @@ fleet-agent:
 fleet-crd:
 - 101.0.0+up0.5.0
 - 101.1.0+up0.6.0-rc.1
+longhorn:
+- 101.3.0+up1.4.0
+longhorn-crd:
+- 101.3.0+up1.4.0
