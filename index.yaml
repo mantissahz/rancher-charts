@@ -1447,6 +1447,51 @@ entries:
       catalog.cattle.io/auto-install: longhorn-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Longhorn
+      catalog.cattle.io/kube-version: '>= 1.21.0-0'
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/provides-gvr: longhorn.io/v1beta1
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
+      catalog.cattle.io/release-name: longhorn
+      catalog.cattle.io/type: cluster-tool
+      catalog.cattle.io/ui-component: longhorn
+      catalog.cattle.io/upstream-version: 1.4.0
+    apiVersion: v1
+    appVersion: v1.4.0
+    created: "2023-01-03T22:36:12.309457+08:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 3b16aff96ca74dbe54b82e95e368ee32f1acbffd98f558306fc4f82ab3e7a6fd
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - assets/longhorn/longhorn-101.3.0+up1.4.0.tgz
+    version: 101.3.0+up1.4.0
+  - annotations:
+      catalog.cattle.io/auto-install: longhorn-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Longhorn
       catalog.cattle.io/kube-version: '>= 1.18.0-0 < 1.25.0-0'
       catalog.cattle.io/namespace: longhorn-system
       catalog.cattle.io/os: linux
@@ -2416,6 +2461,21 @@ entries:
       catalog.cattle.io/namespace: longhorn-system
       catalog.cattle.io/release-name: longhorn-crd
     apiVersion: v1
+    appVersion: v1.4.0
+    created: "2023-01-03T22:36:27.048202+08:00"
+    description: Installs the CRDs for longhorn.
+    digest: d4ef1218bf450b5c345a7a9af9e6515db83cc031f2b1164e136be883f9a484ff
+    name: longhorn-crd
+    type: application
+    urls:
+    - assets/longhorn-crd/longhorn-crd-101.3.0+up1.4.0.tgz
+    version: 101.3.0+up1.4.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: longhorn-system
+      catalog.cattle.io/release-name: longhorn-crd
+    apiVersion: v1
     appVersion: v1.3.2
     created: "2022-11-17T12:57:16.634221-08:00"
     description: Installs the CRDs for longhorn.
@@ -3098,7 +3158,7 @@ entries:
       catalog.cattle.io/scope: management
     apiVersion: v2
     appVersion: 1.1.0-rc1
-    created: "2022-12-21T12:22:01.282952-05:00"
+    created: "2023-01-04T16:06:34.532590408+08:00"
     description: A Helm chart for provisioning AKS clusters
     digest: 028d55bf68a7c56c93dede67e5e3c0b44e3f33ec5f6101dbbf4f47ac62eaa13a
     home: https://github.com/rancher/aks-operator
@@ -5078,7 +5138,7 @@ entries:
       catalog.cattle.io/scope: management
     apiVersion: v2
     appVersion: 1.2.0-rc2
-    created: "2022-12-21T12:22:10.312126-05:00"
+    created: "2023-01-04T16:06:34.559085007+08:00"
     description: A Helm chart for provisioning EKS clusters
     digest: 6dd07da6790d2359eab674e7363af4c9b9af17edb5ff57c4f93b71adf8b01a8a
     home: https://github.com/rancher/eks-operator
@@ -6050,7 +6110,7 @@ entries:
       catalog.cattle.io/scope: management
     apiVersion: v2
     appVersion: 1.1.5
-    created: "2022-12-21T12:22:20.479751-05:00"
+    created: "2023-01-04T16:06:34.573689553+08:00"
     description: A Helm chart for provisioning GKE clusters
     digest: e58152e88291e7e9c27146b4898013c07b97462e2c4ed7305abd8e9f1d748a4d
     home: https://github.com/rancher/gke-operator
@@ -6188,7 +6248,7 @@ entries:
       catalog.cattle.io/release-name: rancher-gke-operator-crd
     apiVersion: v2
     appVersion: 1.1.5
-    created: "2022-12-21T12:22:21.755742-05:00"
+    created: "2023-01-04T16:06:34.574964995+08:00"
     description: GKE Operator CustomResourceDefinitions
     digest: 029336c6eb178dd147a44ea7e35bbc730c05b3feb80d3a81c44eb6fac5d7c84d
     name: rancher-gke-operator-crd
@@ -8369,7 +8429,7 @@ entries:
       catalog.cattle.io/upstream-version: 19.0.3
     apiVersion: v2
     appVersion: 0.59.1
-    created: "2023-01-03T13:40:11.420386-08:00"
+    created: "2023-01-04T16:06:34.817780162+08:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -12641,7 +12701,7 @@ entries:
       catalog.cattle.io/release-name: ui-plugin-operator
     apiVersion: v1
     appVersion: 0.1.0
-    created: "2023-01-03T15:30:13.668781-08:00"
+    created: "2023-01-04T16:06:35.032918003+08:00"
     description: A UI Plugin Operator Chart for plugin management in Rancher
     digest: 9fc0be33c51e057bebc87a8b854acffa7e30189cdf7c7908b60a79804d6ffa93
     keywords:
@@ -12682,7 +12742,7 @@ entries:
       catalog.cattle.io/namespace: cattle-ui-plugin-system
       catalog.cattle.io/release-name: ui-plugin-operator-crd
     apiVersion: v1
-    created: "2023-01-03T15:30:13.669425-08:00"
+    created: "2023-01-04T16:06:35.033103051+08:00"
     description: Installs the CRDs for ui-plugin-operator.
     digest: cdded409c1713f633eea59f8c0893c0d7a652eabd2ab72e75ce20e144be12e54
     name: ui-plugin-operator-crd
