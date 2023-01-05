@@ -50,3 +50,11 @@
        tag: v3.0.3
    pullPolicy: IfNotPresent
  
+@@ -109,6 +109,7 @@
+   defaultLonghornStaticStorageClass: ~
+   backupstorePollInterval: ~
+   failedBackupTTL: ~
++  restoreVolumeRecurringJobs: ~
+   taintToleration: ~
+   systemManagedComponentsNodeSelector: ~
+   priorityClass: ~

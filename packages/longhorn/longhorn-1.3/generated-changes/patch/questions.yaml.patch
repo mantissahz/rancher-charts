@@ -99,3 +99,21 @@
      description: "Specify CSI Driver Snapshotter image repository. Leave blank to autodetect."
      type: string
      label: Longhorn CSI Driver Snapshotter Image Repository
+@@ -340,6 +340,17 @@
+     type: int
+     min: 0
+     default: 1440
++  - variable: defaultSettings.restoreVolumeRecurringJobs
++    label: Restore Volume Recurring Jobs
++    description: "Restore recurring jobs from the backup volume on the backup target and create recurring jobs if not exist during a backup restoration.
+++Longhorn also supports individual volume setting. The setting can be specified on Backup page when making a backup restoration, this overrules the global setting.
+++The available volume setting options are:
+++- **ignored**. This is the default option that instructs Longhorn to inherit from the global setting.
+++- **enabled**. This option instructs Longhorn to restore recurring jobs/groups from the backup target forcibly.
+++- **disabled**. This option instructs Longhorn no restoring recurring jobs/groups should be done."
++    group: "Longhorn Default Settings"
++    type: boolean
++    default: "false"
+   - variable: defaultSettings.autoSalvage
+     label: Automatic salvage
+     description: "If enabled, volumes will be automatically salvaged when all the replicas become faulty e.g. due to network disconnection. Longhorn will try to figure out which replica(s) are usable, then use them for the volume. By default true."
