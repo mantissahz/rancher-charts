@@ -8,9 +8,9 @@
 +      repository: rancher/mirrored-longhornio-longhorn-engine
        tag: v1.2.6
      manager:
--      repository: longhornio/longhorn-manager
-+      repository: rancher/mirrored-longhornio-longhorn-manager
-       tag: v1.2.6
+-      repository: jamesluhz/lh-manager
++      repository: jamesluhz/lh-manager
+       tag: v0421v12x4519b01
      ui:
 -      repository: longhornio/longhorn-ui
 +      repository: rancher/mirrored-longhornio-longhorn-ui

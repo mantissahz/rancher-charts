@@ -4,8 +4,8 @@
    group: "Longhorn Images"
    subquestions:
    - variable: image.longhorn.manager.repository
--    default: longhornio/longhorn-manager
-+    default: rancher/mirrored-longhornio-longhorn-manager
+-    default: jamesluhz/lh-manager
++    default: jamesluhz/lh-manager
      description: "Specify Longhorn Manager Image Repository"
      type: string
      label: Longhorn Manager Image Repository
