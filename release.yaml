@@ -1,3 +1,7 @@
+longhorn:
+  - 103.4.1+up1.7.2
+longhorn-crd:
+  - 103.4.1+up1.7.2
 ui-plugin-operator:
   - 103.0.3+up0.2.2
 ui-plugin-operator-crd:
