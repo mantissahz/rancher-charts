@@ -9,6 +9,10 @@ fleet-crd:
   - 105.0.0+up0.11.0
 harvester-csi-driver:
   - 104.0.3+up0.1.21
+longhorn:
+  - 105.0.0+up1.6.3
+longhorn-crd:
+  - 105.0.0+up1.6.3
 rancher-cis-benchmark:
   - 105.0.0+up7.0.0
 rancher-cis-benchmark-crd:
