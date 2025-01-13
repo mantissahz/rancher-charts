@@ -8,4 +8,4 @@ appVersion: v1.6.4
 description: Installs the CRDs for longhorn.
 name: longhorn-crd
 type: application
-version: 1.6.4
+version: 105.0.1+up1.6.4
