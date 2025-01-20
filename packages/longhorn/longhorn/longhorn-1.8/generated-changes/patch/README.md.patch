@@ -1,6 +1,6 @@
 --- charts-original/README.md
 +++ charts/README.md
-@@ -38,318 +38,13 @@
+@@ -38,317 +38,13 @@
  
  As a replacement for PSPs, [Pod Security Admission](https://kubernetes.io/docs/concepts/security/pod-security-admission/) should be used. Please consult the Longhorn docs for more details on how to configure your chart release namespaces to work with the new Pod Security Admission and apply Pod Security Standards.
  
@@ -107,7 +107,6 @@
 -| persistence.backingImage.enable | bool | `false` | Setting that allows you to use a backing image in a Longhorn StorageClass. |
 -| persistence.backingImage.expectedChecksum | string | `nil` | Expected SHA-512 checksum of a backing image used in a Longhorn StorageClass. |
 -| persistence.backingImage.name | string | `nil` | Backing image to be used for creating and restoring volumes in a Longhorn StorageClass. When no backing images are available, specify the data source type and parameters that Longhorn can use to create a backing image. |
--| persistence.backupTargetName | string | `"default"` | Setting that allows you to specify the backup target for the default Longhorn StorageClass. |
 -| persistence.dataEngine | string | `"v1"` | Setting that allows you to specify the data engine version for the default Longhorn StorageClass. (Options: "v1", "v2") |
 -| persistence.defaultClass | bool | `true` | Setting that allows you to specify the default Longhorn StorageClass. |
 -| persistence.defaultClassReplicaCount | int | `3` | Replica count of the default Longhorn StorageClass. |

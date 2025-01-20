@@ -7,7 +7,7 @@
 +  catalog.cattle.io/namespace: longhorn-system
 +  catalog.cattle.io/release-name: longhorn-crd
  apiVersion: v1
- appVersion: v1.8.0-dev
+-appVersion: v1.8.0-rc4
 -description: Longhorn is a distributed block storage system for Kubernetes.
 -home: https://github.com/longhorn/longhorn
 -icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
@@ -33,6 +33,8 @@
 -- https://github.com/longhorn/longhorn-ui
 -- https://github.com/longhorn/longhorn-tests
 -- https://github.com/longhorn/backing-image-manager
+-version: 1.8.0-rc4
++appVersion: v1.8.0-dev
 +description: Installs the CRDs for longhorn.
 +name: longhorn-crd
- version: 1.8.0-dev
++version: 105.2.0+up1.8.0-dev

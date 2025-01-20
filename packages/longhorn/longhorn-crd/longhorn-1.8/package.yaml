@@ -1,5 +1,5 @@
-url: https://github.com/mantissahz/longhorn.git
-subdirectory: chart/
-commit: 62367fbdce42b4670d5609ddea17ba5b190c10bc
+url: https://github.com/mantissahz/charts.git
+subdirectory: charts/longhorn/
+commit: 37ac6a9fc43b150f28d24868ca5dc329bc60d27e
 version: 105.2.0
 doNotRelease: false

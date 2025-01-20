@@ -9,9 +9,9 @@ annotations:
   catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.11.0-0'
   catalog.cattle.io/release-name: longhorn
   catalog.cattle.io/type: cluster-tool
-  catalog.cattle.io/upstream-version: v1.8.0-dev
+  catalog.cattle.io/upstream-version: v1.8.0-rc4
 apiVersion: v1
-appVersion: v1.8.0-dev
+appVersion: v1.8.0-rc4
 description: Longhorn is a distributed block storage system for Kubernetes.
 home: https://github.com/longhorn/longhorn
 icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
@@ -36,4 +36,4 @@ sources:
 - https://github.com/longhorn/longhorn-ui
 - https://github.com/longhorn/longhorn-tests
 - https://github.com/longhorn/backing-image-manager
-version: 105.2.0+up1.8.0-dev
+version: 105.2.0+up1.8.0-rc4
